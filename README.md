@@ -123,40 +123,7 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  WHAT I BUILD  ═══════════════════════════ -->
 
-## 🚀 &nbsp;What I Build
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🔮 &nbsp;LLM Applications
-> End-to-end intelligent apps powered by large language models — from prompt engineering to production deployment with evaluation pipelines.
-
-</td>
-<td width="50%" valign="top">
-
-### 📚 &nbsp;RAG Systems
-> Retrieval-Augmented Generation pipelines that ground LLMs in real knowledge, using vector stores, hybrid search & re-ranking.
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 &nbsp;AI Agents
-> Autonomous agents with tool use, memory and planning — built with LangGraph for reliable, stateful multi-step reasoning.
-
-</td>
-<td width="50%" valign="top">
-
-### 📊 &nbsp;Data Science
-> From raw data to insight: EDA, feature engineering, statistical modelling, and ML pipelines that actually work in production.
-
-</td>
-</tr>
-</table>
-
----
 
 <!-- ═══════════════════════════  GITHUB STATS  ═══════════════════════════ -->
 
@@ -221,32 +188,6 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  CURRENT FOCUS  ═══════════════════════════ -->
 
-## 🎯 &nbsp;Currently
-
-<table>
-<tr>
-<td>🔭 &nbsp;<b>Building</b></td>
-<td>Production-ready RAG systems with advanced retrieval strategies</td>
-</tr>
-<tr>
-<td>🌱 &nbsp;<b>Learning</b></td>
-<td>Multi-agent orchestration · AI safety · Fine-tuning strategies</td>
-</tr>
-<tr>
-<td>🤝 &nbsp;<b>Open to</b></td>
-<td>Collaborations on LLM projects, research, and open-source AI tools</td>
-</tr>
-<tr>
-<td>💬 &nbsp;<b>Ask me about</b></td>
-<td>RAG architectures, LangChain/LangGraph, vector databases, LLM evaluation</td>
-</tr>
-<tr>
-<td>⚡ &nbsp;<b>Fun fact</b></td>
-<td>I believe the best AI systems are the ones that feel <i>invisible</i> — they just work</td>
-</tr>
-</table>
-
----
 
 <!-- ═══════════════════════════  ACTIVITY  ═══════════════════════════ -->
 
@@ -262,18 +203,6 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  PROFILE TROPHY  ═══════════════════════════ -->
 
-## 🏆 &nbsp;GitHub Trophies
-
-<div align="center">
-
-<a href="https://github.com/ryo-ma/github-profile-trophy">
-  <img src="https://github-profile-trophy.vercel.app/?username=zahra-mmn&theme=darkhub&no-bg=true&no-frame=true&column=4&margin-w=10&margin-h=10&row=2" alt="GitHub Trophies"/>
-</a>
-
-</div>
-
-
----
 
 <!-- ═══════════════════════════  CONNECT  ═══════════════════════════ -->
 
@@ -293,61 +222,6 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  GAME  ═══════════════════════════ -->
 
-## 🧠 &nbsp;Neural Defender — Guard the Model
-
-<div align="center">
-
-<img src="https://cdn.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/neural_defender.svg" width="100%" alt="Neural Defender — a self-playing, AI-themed defense game HUD"/>
-
-> *Plays itself on a loop — no click, no hosting, no JS. Threats are noise injection,*
-> *overfitting, bias drift & adversarial attacks · live accuracy readout · themed around the ML workflow*
-
-</div>
-
-<!--
-  WHY THIS SVG IS LOADED FROM cdn.jsdelivr.net INSTEAD OF A LOCAL PATH:
-
-  neural_defender.svg animates using SMIL (<animate>, <animateTransform>,
-  <animateMotion>) — plain markup, not JavaScript. But GitHub's own README
-  renderer sanitizes locally-embedded SVGs and strips those animation tags
-  (the same policy that blocks <script>), so a relative path like
-  src="neural_defender.svg" only ever shows a static first frame in the
-  README — even though the file itself is fully animated (that's why it
-  plays correctly if you open the raw file directly).
-
-  Pointing at a jsDelivr mirror of the same file sidesteps GitHub's
-  sanitizer entirely: the browser fetches the SVG straight from jsDelivr's
-  CDN, untouched, so the animation plays. This is the same reason the
-  Typing SVG and streak-stats images elsewhere in this README are loaded
-  from external URLs rather than local files.
-
-  SETUP (one-time):
-    1. Push neural_defender.svg to this repo on your default branch.
-       jsDelivr mirrors public GitHub repos automatically — no extra
-       account or service needed.
-    2. If your default branch isn't "main", change @main in the URL above
-       to match (e.g. @master).
-
-  UPDATING THE FILE LATER:
-    jsDelivr caches aggressively (up to ~7 days) for performance. After
-    pushing a change to neural_defender.svg, force an immediate refresh by
-    visiting this purge URL once in your browser:
-      https://purge.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/neural_defender.svg
-
-  To tweak the animation (speed, which enemies pop, colors, layout), edit
-  generate_neural_defender.py and re-run: python3 generate_neural_defender.py
-  Files: generate_neural_defender.py · neural_defender.svg
--->
-
----
-
-
-
-<div align="center">
-
-![Profile Views](https://komarev.com/ghpvc/?username=zahra-mmn&color=3CE89A&style=for-the-badge&label=PROFILE+VIEWS)
-
-<br/>
 
 <!-- capsule-render footer wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1a3a2a,100:3CE89A&height=100&section=footer&reversal=false" width="100%"/>
