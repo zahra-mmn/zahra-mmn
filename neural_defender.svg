@@ -1,0 +1,163 @@
+<svg viewBox="0 0 1120 560" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code','JetBrains Mono',monospace">
+  <defs>
+    <linearGradient id="nd-edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3CE89A" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#8B8FF7" stop-opacity="0.35"/>
+    </linearGradient>
+    <pattern id="nd-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#274536" stroke-width="0.5" opacity="0.5"/>
+    </pattern>
+    <radialGradient id="nd-glow" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#3CE89A" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#3CE89A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1120" height="560" fill="#0B0F14"/>
+  <rect x="12" y="12" width="1096" height="536" rx="16" fill="#0D1117"/>
+  <rect x="12" y="12" width="1096" height="536" rx="16" fill="url(#nd-grid)"/>
+  <rect x="13" y="13" width="1094" height="534" rx="15" fill="none" stroke="url(#nd-edge)" stroke-width="1.5"/>
+  <circle cx="456" cy="440" r="150" fill="url(#nd-glow)"/>
+
+  <!-- header -->
+  <text x="40" y="52" fill="#3CE89A" font-size="19" font-weight="700" letter-spacing="1">NEURAL DEFENDER</text>
+  <text x="420" y="46" fill="#7D8590" font-size="11">ACCURACY</text>
+  <text x="420" y="64" fill="#E6EDF3" font-size="18" font-weight="700">0.9482</text>
+  <text x="600" y="46" fill="#7D8590" font-size="11">BEST F1-SCORE</text>
+  <text x="600" y="64" fill="#F5B841" font-size="18" font-weight="700">0.9999</text>
+  <text x="1080" y="46" fill="#7D8590" font-size="11" text-anchor="end">LIVES</text>
+  <g>
+    <circle cx="1042" cy="58" r="5" fill="#3CE89A"/>
+    <circle cx="1060" cy="58" r="5" fill="#3CE89A"/>
+    <circle cx="1078" cy="58" r="5" fill="#1C6B47"/>
+  </g>
+  <line x1="24" y1="76" x2="880" y2="76" stroke="#274536" stroke-width="1"/>
+  <line x1="900" y1="30" x2="900" y2="76" stroke="#274536" stroke-width="1"/>
+
+  <!-- incoming attack banner -->
+  <rect x="790" y="24" width="96" height="22" rx="11" fill="#FF5C6C" opacity="0.18"/>
+  <rect x="790" y="24" width="96" height="22" rx="11" fill="none" stroke="#FF5C6C" stroke-width="1.3"/>
+  <text x="838" y="39" fill="#FF5C6C" font-size="9.5" text-anchor="middle" letter-spacing="0.5">DATA POISONING</text>
+
+  <!-- enemy / threat grid -->
+  <g>
+    <polygon points="46,88.5 53.5,96 46,103.5 38.5,96" fill="#FF5C6C"/>
+    <polygon points="84,88.5 91.5,96 84,103.5 76.5,96" fill="#FF5C6C"/>
+    <polygon points="122,88.5 129.5,96 122,103.5 114.5,96" fill="#FF5C6C"/>
+    <polygon points="160,88.5 167.5,96 160,103.5 152.5,96" fill="#FF5C6C"/>
+    <polygon points="198,88.5 205.5,96 198,103.5 190.5,96" fill="#FF5C6C"/>
+    <polygon points="236,88.5 243.5,96 236,103.5 228.5,96" fill="#FF5C6C"/>
+    <polygon points="274,88.5 281.5,96 274,103.5 266.5,96" fill="#FF5C6C"/>
+    <polygon points="312,88.5 319.5,96 312,103.5 304.5,96" fill="#FF5C6C"/>
+    <polygon points="350,88.5 357.5,96 350,103.5 342.5,96" fill="#FF5C6C"/>
+    <polygon points="388,88.5 395.5,96 388,103.5 380.5,96" fill="#FF5C6C"/>
+    <polygon points="46,118.5 53.5,132.0 38.5,132.0" fill="#8B8FF7"/>
+    <polygon points="84,118.5 91.5,132.0 76.5,132.0" fill="#8B8FF7"/>
+    <polygon points="122,118.5 129.5,132.0 114.5,132.0" fill="#8B8FF7"/>
+    <polygon points="160,118.5 167.5,132.0 152.5,132.0" fill="#8B8FF7"/>
+    <polygon points="198,118.5 205.5,132.0 190.5,132.0" fill="#8B8FF7"/>
+    <polygon points="236,118.5 243.5,132.0 228.5,132.0" fill="#8B8FF7"/>
+    <polygon points="274,118.5 281.5,132.0 266.5,132.0" fill="#8B8FF7"/>
+    <polygon points="312,118.5 319.5,132.0 304.5,132.0" fill="#8B8FF7"/>
+    <polygon points="350,118.5 357.5,132.0 342.5,132.0" fill="#8B8FF7"/>
+    <polygon points="388,118.5 395.5,132.0 380.5,132.0" fill="#8B8FF7"/>
+    <rect x="42.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="80.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="118.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="156.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="194.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="232.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="270.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="308.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="346.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <rect x="384.2" y="152.2" width="7.5" height="7.5" rx="1.5" fill="#F5B841"/>
+    <circle cx="46" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="84" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="122" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="160" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="198" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="236" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="274" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="312" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="350" cy="186" r="3.3" fill="#3CE89A"/>
+    <circle cx="388" cy="186" r="3.3" fill="#3CE89A"/>
+  </g>
+
+  <!-- checkpoints -->
+  <g>
+    <rect x="66" y="392" width="150" height="38" rx="6" fill="none" stroke="#1C6B47" stroke-width="1.5"/>
+    <text x="141" y="415" fill="#1C6B47" font-size="10" text-anchor="middle" letter-spacing="1">CHECKPOINT</text>
+    <rect x="266" y="392" width="150" height="38" rx="6" fill="none" stroke="#1C6B47" stroke-width="1.5"/>
+    <text x="341" y="415" fill="#1C6B47" font-size="10" text-anchor="middle" letter-spacing="1">CHECKPOINT</text>
+    <rect x="466" y="392" width="150" height="38" rx="6" fill="none" stroke="#1C6B47" stroke-width="1.5"/>
+    <text x="541" y="415" fill="#1C6B47" font-size="10" text-anchor="middle" letter-spacing="1">CHECKPOINT</text>
+    <rect x="666" y="392" width="150" height="38" rx="6" fill="none" stroke="#1C6B47" stroke-width="1.5"/>
+    <text x="741" y="415" fill="#1C6B47" font-size="10" text-anchor="middle" letter-spacing="1">CHECKPOINT</text>
+  </g>
+
+  <!-- model core + cannon (the thing being defended) -->
+  <g>
+    
+    <g stroke="#3CE89A" stroke-width="1.3" fill="#0D1117">
+      <circle cx="456" cy="470" r="13"/>
+      <circle cx="434" cy="478" r="7"/>
+      <circle cx="478" cy="478" r="7"/>
+      <circle cx="456" cy="450" r="7"/>
+    </g>
+    <g stroke="#3CE89A" stroke-width="1" opacity="0.7">
+      <line x1="456" y1="470" x2="434" y2="478"/>
+      <line x1="456" y1="470" x2="478" y2="478"/>
+      <line x1="456" y1="470" x2="456" y2="450"/>
+    </g>
+    <circle cx="456" cy="470" r="3" fill="#3CE89A"/>
+    <line x1="456" y1="457" x2="456" y2="424" stroke="#3CE89A" stroke-width="2" opacity="0.85"/>
+    
+  </g>
+  <text x="456" y="500" fill="#7D8590" font-size="9.5" text-anchor="middle" letter-spacing="1">MODEL CORE</text>
+
+  <!-- side panel -->
+  <line x1="900" y1="88" x2="900" y2="518" stroke="#274536" stroke-width="1"/>
+  <text x="1000" y="106" fill="#7D8590" font-size="10.5" text-anchor="middle" letter-spacing="2">— THREAT LEGEND —</text>
+  <g>
+    <polygon points="924,123 931,130 924,137 917,130" fill="#FF5C6C"/>
+    <text x="944" y="134" fill="#E6EDF3" font-size="11">ADVERSARIAL ATTACK</text>
+    <text x="944" y="147" fill="#7D8590" font-size="9.5">= 300 PTS</text>
+    <polygon points="924,149 931,161.6 917,161.6" fill="#8B8FF7"/>
+    <text x="944" y="160" fill="#E6EDF3" font-size="11">BIAS DRIFT</text>
+    <text x="944" y="173" fill="#7D8590" font-size="9.5">= 30 PTS</text>
+    <rect x="920.5" y="178.5" width="7" height="7" rx="1.5" fill="#F5B841"/>
+    <text x="944" y="186" fill="#E6EDF3" font-size="11">OVERFITTING</text>
+    <text x="944" y="199" fill="#7D8590" font-size="9.5">= 20 PTS</text>
+    <circle cx="924" cy="208" r="3.9" fill="#3CE89A"/>
+    <text x="944" y="212" fill="#E6EDF3" font-size="11">NOISE INJECTION</text>
+    <text x="944" y="225" fill="#7D8590" font-size="9.5">= 10 PTS</text>
+  </g>
+  <line x1="912" y1="240" x2="1088" y2="240" stroke="#274536" stroke-width="1"/>
+  <text x="1000" y="262" fill="#7D8590" font-size="10.5" text-anchor="middle" letter-spacing="2">— EPOCH 12 —</text>
+  <text x="1000" y="278" fill="#E6EDF3" font-size="10" text-anchor="middle">DIFFICULTY: MAX</text>
+  <line x1="912" y1="298" x2="1088" y2="298" stroke="#274536" stroke-width="1"/>
+  
+    <text x="924" y="316" fill="#7D8590" font-size="10">ACCURACY</text>
+    <rect x="924" y="322" width="130" height="6" rx="3" fill="#1B2430"/>
+    <rect x="924" y="322" width="122.2" height="6" rx="3" fill="#3CE89A"/>
+    
+    <text x="924" y="350" fill="#7D8590" font-size="10">LEARNING RATE</text>
+    <rect x="924" y="356" width="130" height="6" rx="3" fill="#1B2430"/>
+    <rect x="924" y="356" width="80.6" height="6" rx="3" fill="#F5B841"/>
+    
+    <text x="924" y="384" fill="#7D8590" font-size="10">ROBUSTNESS</text>
+    <rect x="924" y="390" width="130" height="6" rx="3" fill="#1B2430"/>
+    <rect x="924" y="390" width="39.0" height="6" rx="3" fill="#FF5C6C"/>
+    
+  <line x1="912" y1="416" x2="1088" y2="416" stroke="#274536" stroke-width="1"/>
+  <text x="1000" y="438" fill="#E6EDF3" font-size="11" text-anchor="middle">← → MOVE</text>
+  <text x="1000" y="454" fill="#3CE89A" font-size="11" text-anchor="middle">SPACE: BACKPROP</text>
+  <line x1="912" y1="470" x2="1088" y2="470" stroke="#274536" stroke-width="1"/>
+  <text x="1000" y="494" fill="#7D8590" font-size="10" text-anchor="middle" opacity="0.8">▶ PRESS ENTER</text>
+
+  <!-- footer -->
+  <line x1="24" y1="520" x2="1096" y2="520" stroke="#274536" stroke-width="1"/>
+  <text x="40" y="540" fill="#7D8590" font-size="10">← → MOVE  SPACE: BACKPROP</text>
+  <text x="560" y="540" fill="#7D8590" font-size="10" text-anchor="middle" opacity="0.8">© Fatima Zahra Moumene — AI ENGINEER</text>
+  <text x="1080" y="540" fill="#7D8590" font-size="10" text-anchor="end">zahra-mmn</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" font-family="'Fira Code','JetBrains Mono',monospace">
+  <defs>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3CE89A" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8B8FF7" stop-opacity="0.35"/>
+    </linearGradient>
+    <linearGradient id="pulseFade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3CE89A" stop-opacity="0"/>
+      <stop offset="0.15" stop-color="#3CE89A" stop-opacity="1"/>
+      <stop offset="0.85" stop-color="#3CE89A" stop-opacity="1"/>
+      <stop offset="1" stop-color="#3CE89A" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="18" height="18" patternUnits="userSpaceOnUse">
+      <path d="M 18 0 L 0 0 0 18" fill="none" stroke="#1E2A22" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="298" rx="14" fill="#0D1117"/>
+  <rect x="1" y="1" width="898" height="298" rx="14" fill="url(#grid)"/>
+  <rect x="1.5" y="1.5" width="897" height="297" rx="13.5" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+
+  <!-- title bar -->
+  <circle cx="26" cy="28" r="4.5" fill="#FF5F56"/>
+  <circle cx="42" cy="28" r="4.5" fill="#FFBD2E"/>
+  <circle cx="58" cy="28" r="4.5" fill="#27C93F"/>
+  <text x="80" y="32" fill="#7D8590" font-size="12">contribution_stats.sh — activity report</text>
+  <text x="874" y="32" fill="#7D8590" font-size="11" text-anchor="end">updated 2026-07-01</text>
+  <line x1="0" y1="48" x2="900" y2="48" stroke="#1E2A22" stroke-width="1"/>
+
+  <!-- three metric columns -->
+  <g font-size="34" font-weight="700" fill="#E6EDF3">
+    <text x="70" y="120">11</text>
+    <text x="370" y="120" fill="#3CE89A">1</text>
+    <text x="670" y="120">2</text>
+  </g>
+  <g font-size="12.5" fill="#7D8590" letter-spacing="0.5">
+    <text x="70" y="145">TOTAL CONTRIBUTIONS</text>
+    <text x="370" y="145" fill="#3CE89A">CURRENT STREAK</text>
+    <text x="670" y="145">LONGEST STREAK</text>
+  </g>
+  <g font-size="11" fill="#7D8590" opacity="0.75">
+    <text x="70" y="163">Mar 13, 2025 → present</text>
+    <text x="370" y="163" fill="#3CE89A" opacity="0.85">day tracked: Jun 30</text>
+    <text x="670" y="163">Apr 8 – Apr 9, 2025</text>
+  </g>
+
+  <line x1="300" y1="78" x2="300" y2="172" stroke="#1E2A22" stroke-width="1"/>
+  <line x1="600" y1="78" x2="600" y2="172" stroke="#1E2A22" stroke-width="1"/>
+
+  <!-- signature: activity pulse line -->
+  <line x1="0" y1="196" x2="900" y2="196" stroke="#1E2A22" stroke-width="1"/>
+  <text x="40" y="222" fill="#7D8590" font-size="11" letter-spacing="0.5">ACTIVITY SIGNAL</text>
+  <path d="M 40.0 23.4 L 61.0 36.0 L 82.1 36.6 L 103.1 38.7 L 124.1 41.5 L 145.1 34.5 L 166.2 43.9 L 187.2 42.5 L 208.2 39.9 L 229.2 23.3 L 250.3 27.0 L 271.3 36.6 L 292.3 38.8 L 313.3 41.5 L 334.4 43.6 L 355.4 34.9 L 376.4 42.4 L 397.4 39.8 L 418.5 23.3 L 439.5 36.0 L 460.5 27.7 L 481.5 38.9 L 502.6 41.6 L 523.6 43.6 L 544.6 43.9 L 565.6 33.4 L 586.7 39.7 L 607.7 23.2 L 628.7 36.0 L 649.7 36.7 L 670.8 29.9 L 691.8 41.7 L 712.8 43.6 L 733.8 43.9 L 754.9 42.3 L 775.9 30.7 L 796.9 23.2 L 817.9 36.0 L 839.0 36.7 L 860.0 39.0" transform="translate(0,220)" fill="none" stroke="url(#pulseFade)" stroke-width="2"/>
+
+  <!-- footer tags -->
+  <line x1="0" y1="256" x2="900" y2="256" stroke="#1E2A22" stroke-width="1"/>
+  <text x="40" y="280" fill="#8B8FF7" font-size="11.5">6 public repos</text>
+  <text x="220" y="280" fill="#E6EDF3" font-size="11.5" opacity="0.85">Python · LangChain · FastAPI</text>
+  <text x="874" y="280" fill="#3CE89A" font-size="11.5" text-anchor="end">focus: RAG Systems</text>
+</svg>
