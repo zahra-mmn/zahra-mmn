@@ -191,48 +191,30 @@ class FatimaZahraMoumene:
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1117,60:0a2018,100:0D1117&height=180&section=header&text=%22Intelligence+is+not+about+having+all+the+answers+—%22&fontSize=17&fontColor=3CE89A&animation=fadeIn&fontAlignY=35&desc=it%27s+about+asking+the+right+questions+and+knowing+where+to+look+for+the+truth.&descSize=14&descAlignY=60&descFontColor=AAAAAA" width="100%"/>
-
-<br/>
-
-<table width="80%" border="0">
-<tr>
-<td align="center" width="33%">
-
-**🧠 Principle 1**
-
-> *Data without context<br/>is just noise.*
-
-</td>
-<td align="center" width="33%">
-
-**🔗 Principle 2**
-
-> *The best model is the one<br/>that earns trust.*
-
-</td>
-<td align="center" width="33%">
-
-**🚀 Principle 3**
-
-> *Build for impact,<br/>not for benchmarks.*
-
-</td>
-</tr>
-</table>
-
-<br/>
-
-![](https://img.shields.io/badge/─────────────────────────────────────────────-0D1117?style=flat-square&color=3CE89A)
-
-*"AI is a bridge between human intuition and machine precision.*
-*I build that bridge — one model, one pipeline, one insight at a time."*
-
-**— Fatima Zahra Moumene**
-
-![](https://img.shields.io/badge/─────────────────────────────────────────────-0D1117?style=flat-square&color=3CE89A)
+<img src="https://cdn.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/philosophy_quotes.svg" width="100%" alt="Rotating quote card — my AI philosophy"/>
 
 </div>
+
+<!--
+  Five quotes crossfade automatically, one at a time, ~5s each — the
+  guiding-principle lines that used to live in a separate 3-column table
+  are now part of the same rotation, so there's one clean animated card
+  instead of a banner + table + quote block.
+
+  Same SMIL-animation / jsDelivr-CDN situation as neural_defender.svg
+  above: GitHub's README renderer strips SMIL tags from locally-embedded
+  SVGs, so this has to be loaded from a CDN mirror to actually animate.
+
+  TO EDIT THE QUOTES:
+    1. Open quotes_config.json and edit/add/reorder entries.
+    2. Run   python3 generate_philosophy_card.py
+    3. Commit the refreshed philosophy_quotes.svg + the edited config.
+    4. Visit this once to force the CDN to pick up the change immediately
+       (otherwise it can take up to ~7 days to refresh on its own):
+       https://purge.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/philosophy_quotes.svg
+
+  Files: quotes_config.json · generate_philosophy_card.py · philosophy_quotes.svg
+-->
 
 
 ---
