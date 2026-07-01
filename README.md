@@ -162,13 +162,24 @@ class FatimaZahraMoumene:
 
 ## 📊 &nbsp;GitHub Stats
 
-
-
 <div align="center">
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=zahra-mmn&theme=dark&background=0D1117&border=3CE89A&ring=3CE89A&fire=3CE89A&currStreakNum=FFFFFF&sideNums=FFFFFF&currStreakLabel=3CE89A&sideLabels=3CE89A&dates=888888)](https://git.io/streak-stats)
+<img src="contribution_stats.svg" width="100%" alt="Contribution stats card"/>
 
 </div>
+
+<!--
+  This card is self-hosted, not fetched from a third-party service — it
+  never breaks if that service goes down, and you fully control what it says.
+
+  TO UPDATE IT (do this whenever you land a contribution):
+    1. Open  stats_config.json  and edit the numbers.
+    2. Run   python3 generate_stats_card.py
+    3. Commit the refreshed  contribution_stats.svg  + the edited config.
+
+  Files: stats_config.json · generate_stats_card.py · contribution_stats.svg
+-->
+
 
 ---
 
@@ -300,14 +311,15 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  GAME  ═══════════════════════════ -->
 
-## 👾 &nbsp;Defend the Galaxy — Space Invaders
+## 🧠 &nbsp;Neural Defender — Guard the Model
 
 <div align="center">
 
-<img src="space_invaders.svg" width="100%" alt="Space Invaders Game"/>
+<img src="neural_defender.svg" width="100%" alt="Neural Defender — an AI-themed defense game HUD"/>
 
-> *4 rows of aliens marching · 3-color UFO · animated lasers · explosions · shields · live HUD*
-> Upload `space_invaders.svg` alongside this README in your profile repo.
+> *Threats are noise injection, overfitting, bias drift & adversarial attacks · defend the model core*
+> *live accuracy / F1 / robustness HUD · epoch counter · themed entirely around the ML workflow*
+> Upload `neural_defender.svg` alongside this README in your profile repo.
 
 </div>
 
