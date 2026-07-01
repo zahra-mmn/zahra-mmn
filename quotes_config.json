@@ -1,0 +1,39 @@
+{
+  "_instructions": "Edit quotes below (add/remove/reorder), then run: python3 generate_philosophy_card.py — rewrites philosophy_quotes.svg. Each quote's 'lines' is how it's manually wrapped for display; keep each line under ~55 characters so it doesn't overflow the card.",
+
+  "name": "Fatima Zahra Moumene",
+  "role": "AI Engineer",
+  "seconds_per_quote": 5,
+
+  "quotes": [
+    {
+      "lines": [
+        "“Intelligence is not about having all the answers —",
+        "it's about asking the right questions and",
+        "knowing where to look for the truth.”"
+      ]
+    },
+    {
+      "lines": [
+        "“Data without context is just noise.”"
+      ]
+    },
+    {
+      "lines": [
+        "“The best model is the one that earns trust.”"
+      ]
+    },
+    {
+      "lines": [
+        "“Build for impact, not for benchmarks.”"
+      ]
+    },
+    {
+      "lines": [
+        "“AI is a bridge between human intuition and machine precision.",
+        "I build that bridge — one model, one pipeline,",
+        "one insight at a time.”"
+      ]
+    }
+  ]
+}
