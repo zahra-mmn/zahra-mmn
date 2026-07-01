@@ -1,8 +1,7 @@
 {
   "_instructions": "Edit quotes below (add/remove/reorder), then run: python3 generate_philosophy_card.py — rewrites philosophy_quotes.svg. Each quote's 'lines' is how it's manually wrapped for display; keep each line under ~55 characters so it doesn't overflow the card.",
 
-  "name": "Fatima Zahra Moumene",
-  "role": "AI Engineer",
+  "name": "--Fatima Zahra Moumene--",
   "seconds_per_quote": 5,
 
   "quotes": [
