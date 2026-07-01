@@ -1,0 +1,389 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <style>
+      .bg { fill: #0D1117; }
+      .s1 { animation: twinkle1 2.1s infinite ease-in-out; }
+      .s2 { animation: twinkle2 3.0s infinite ease-in-out; }
+      .s3 { animation: twinkle3 1.7s infinite ease-in-out; }
+      @keyframes twinkle1 { 0%,100%{opacity:.1} 50%{opacity:1} }
+      @keyframes twinkle2 { 0%,100%{opacity:.5} 50%{opacity:.05} }
+      @keyframes twinkle3 { 0%,100%{opacity:.8} 33%{opacity:.1} 66%{opacity:.9} }
+
+      .row1 { animation: march 3.6s steps(1,end) infinite; }
+      .row2 { animation: march 3.6s steps(1,end) infinite; animation-delay:-0.9s; }
+      .row3 { animation: march 3.6s steps(1,end) infinite; animation-delay:-1.8s; }
+      .row4 { animation: march 3.6s steps(1,end) infinite; animation-delay:-2.7s; }
+      @keyframes march {
+        0%  {transform:translateX(0)}  12% {transform:translateX(14px)}
+        25% {transform:translateX(28px)} 37% {transform:translateX(14px)}
+        50% {transform:translateX(0)}  62% {transform:translateX(-14px)}
+        75% {transform:translateX(-28px)} 87% {transform:translateX(-14px)}
+        100%{transform:translateX(0)}
+      }
+
+      .ba { animation: ablink .8s steps(1) infinite; }
+      .bb { animation: ablink .8s steps(1) infinite; animation-delay:-.4s; }
+      @keyframes ablink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+
+      .player { animation: pmove 9s ease-in-out infinite alternate; }
+      @keyframes pmove {
+        0%{transform:translateX(0)} 20%{transform:translateX(180px)}
+        45%{transform:translateX(60px)} 70%{transform:translateX(260px)}
+        100%{transform:translateX(30px)}
+      }
+
+      .laser1{animation:sh1 2.8s linear infinite;}
+      .laser2{animation:sh2 3.4s linear infinite;animation-delay:-1.1s;}
+      .laser3{animation:sh3 4.0s linear infinite;animation-delay:-2.3s;}
+      @keyframes sh1{0%{transform:translateY(0);opacity:1}55%{transform:translateY(-230px);opacity:1}56%{opacity:0}100%{transform:translateY(-230px);opacity:0}}
+      @keyframes sh2{0%{transform:translateY(0);opacity:1}55%{transform:translateY(-230px);opacity:1}56%{opacity:0}100%{transform:translateY(-230px);opacity:0}}
+      @keyframes sh3{0%{transform:translateY(0);opacity:1}55%{transform:translateY(-230px);opacity:1}56%{opacity:0}100%{transform:translateY(-230px);opacity:0}}
+
+      .bomb1{animation:b1 4.2s linear infinite;}
+      .bomb2{animation:b2 5.1s linear infinite;animation-delay:-2s;}
+      @keyframes b1{0%{transform:translateY(0);opacity:1}70%{transform:translateY(210px);opacity:1}71%{opacity:0}100%{transform:translateY(210px);opacity:0}}
+      @keyframes b2{0%{transform:translateY(0);opacity:1}70%{transform:translateY(210px);opacity:1}71%{opacity:0}100%{transform:translateY(210px);opacity:0}}
+
+      .exp1{animation:ex1 2.8s linear infinite;}
+      .exp2{animation:ex2 3.4s linear infinite;animation-delay:-1.1s;}
+      .exp3{animation:ex3 4.0s linear infinite;animation-delay:-2.3s;}
+      @keyframes ex1{0%,53%{opacity:0;transform:scale(0)}55%{opacity:1;transform:scale(1)}65%{opacity:0;transform:scale(2.4)}100%{opacity:0}}
+      @keyframes ex2{0%,53%{opacity:0;transform:scale(0)}55%{opacity:1;transform:scale(1)}65%{opacity:0;transform:scale(2.4)}100%{opacity:0}}
+      @keyframes ex3{0%,53%{opacity:0;transform:scale(0)}55%{opacity:1;transform:scale(1)}65%{opacity:0;transform:scale(2.4)}100%{opacity:0}}
+
+      .shield-pulse{animation:sp 1.5s ease-in-out infinite alternate;}
+      @keyframes sp{from{opacity:.45}to{opacity:1}}
+
+      .glow-border{animation:gb 2s ease-in-out infinite alternate;}
+      @keyframes gb{from{filter:drop-shadow(0 0 4px #3CE89A)}to{filter:drop-shadow(0 0 14px #3CE89A)}}
+
+      .ufo{animation:ufly 7s linear infinite;}
+      @keyframes ufly{0%{transform:translateX(-80px);opacity:0}5%{opacity:1}90%{opacity:1}100%{transform:translateX(940px);opacity:0}}
+
+      .life{animation:lf .9s ease-in-out infinite alternate;}
+      @keyframes lf{from{opacity:.6}to{opacity:1}}
+
+      .scanline{animation:sc 6s linear infinite;opacity:.035;}
+      @keyframes sc{from{transform:translateY(-420px)}to{transform:translateY(420px)}}
+
+      .barpulse{animation:barp 1.8s ease-in-out infinite alternate;}
+      @keyframes barp{from{opacity:.7}to{opacity:1}}
+
+      .insertcoin{animation:ic 1s steps(1) infinite;}
+      @keyframes ic{0%,49%{opacity:1}50%,100%{opacity:0}}
+    </style>
+
+    <!-- ALIEN C — octopus -->
+    <g id="aC">
+      <rect x="4" y="0" width="8" height="2" fill="currentColor"/>
+      <rect x="2" y="2" width="12" height="8" fill="currentColor"/>
+      <rect x="3" y="4" width="2" height="2" fill="#0D1117"/>
+      <rect x="11" y="4" width="2" height="2" fill="#0D1117"/>
+      <rect x="0" y="6" width="2" height="2" fill="currentColor"/>
+      <rect x="14" y="6" width="2" height="2" fill="currentColor"/>
+      <rect x="1" y="10" width="3" height="2" fill="currentColor"/>
+      <rect x="5" y="10" width="2" height="3" fill="currentColor"/>
+      <rect x="9" y="10" width="2" height="3" fill="currentColor"/>
+      <rect x="12" y="10" width="3" height="2" fill="currentColor"/>
+    </g>
+    <!-- ALIEN B — crab -->
+    <g id="aB">
+      <rect x="2" y="3" width="12" height="7" fill="currentColor"/>
+      <rect x="0" y="5" width="2" height="3" fill="currentColor"/>
+      <rect x="14" y="5" width="2" height="3" fill="currentColor"/>
+      <rect x="3" y="5" width="2" height="2" fill="#0D1117"/>
+      <rect x="11" y="5" width="2" height="2" fill="#0D1117"/>
+      <rect x="2" y="10" width="3" height="2" fill="currentColor"/>
+      <rect x="7" y="10" width="2" height="2" fill="currentColor"/>
+      <rect x="11" y="10" width="3" height="2" fill="currentColor"/>
+    </g>
+    <!-- ALIEN A — squid -->
+    <g id="aA">
+      <rect x="3" y="2" width="10" height="8" fill="currentColor"/>
+      <rect x="4" y="4" width="2" height="2" fill="#0D1117"/>
+      <rect x="10" y="4" width="2" height="2" fill="#0D1117"/>
+      <rect x="1" y="8" width="2" height="3" fill="currentColor"/>
+      <rect x="5" y="9" width="2" height="3" fill="currentColor"/>
+      <rect x="9" y="9" width="2" height="3" fill="currentColor"/>
+      <rect x="13" y="8" width="2" height="3" fill="currentColor"/>
+      <rect x="4" y="0" width="2" height="2" fill="currentColor"/>
+      <rect x="10" y="0" width="2" height="2" fill="currentColor"/>
+    </g>
+    <!-- PLAYER -->
+    <g id="ship">
+      <rect x="7" y="0" width="4" height="4" fill="#3CE89A"/>
+      <rect x="3" y="4" width="12" height="4" fill="#3CE89A"/>
+      <rect x="0" y="8" width="18" height="4" fill="#3CE89A"/>
+      <rect x="8" y="1" width="2" height="2" fill="#0D1117"/>
+      <rect x="6"  y="12" width="2" height="2" fill="#88FFCC"/>
+      <rect x="10" y="12" width="2" height="2" fill="#88FFCC"/>
+    </g>
+    <!-- UFO -->
+    <g id="ufo">
+      <ellipse cx="22" cy="8" rx="20" ry="6" fill="#FF4455"/>
+      <ellipse cx="22" cy="5" rx="11" ry="4" fill="#FF8888"/>
+      <circle cx="14" cy="6" r="2" fill="#FFD700" opacity=".8"/>
+      <circle cx="22" cy="4" r="2" fill="#FFD700" opacity=".8"/>
+      <circle cx="30" cy="6" r="2" fill="#FFD700" opacity=".8"/>
+    </g>
+  </defs>
+
+  <!-- BG -->
+  <rect width="900" height="420" class="bg" rx="8"/>
+
+  <!-- GLOWING BORDER -->
+  <rect x="2" y="2" width="896" height="416" rx="7" class="glow-border" fill="none" stroke="#3CE89A" stroke-width="2"/>
+
+  <!-- STARS -->
+  <g class="s1">
+    <circle cx="50"  cy="30"  r="1"   fill="#fff"/>
+    <circle cx="200" cy="60"  r="1"   fill="#fff"/>
+    <circle cx="380" cy="22"  r="1.2" fill="#fff"/>
+    <circle cx="550" cy="45"  r="1"   fill="#fff"/>
+    <circle cx="130" cy="190" r="1"   fill="#3CE89A" opacity=".6"/>
+    <circle cx="680" cy="280" r="1"   fill="#3CE89A" opacity=".4"/>
+  </g>
+  <g class="s2">
+    <circle cx="100" cy="80"  r="1.2" fill="#fff"/>
+    <circle cx="310" cy="50"  r="1"   fill="#fff"/>
+    <circle cx="460" cy="70"  r="1.2" fill="#fff"/>
+    <circle cx="30"  cy="150" r="1"   fill="#fff"/>
+    <circle cx="600" cy="100" r="1"   fill="#aef"/>
+  </g>
+  <g class="s3">
+    <circle cx="170" cy="110" r="1"   fill="#aef"/>
+    <circle cx="430" cy="100" r="1"   fill="#aef"/>
+    <circle cx="640" cy="40"  r="1"   fill="#fff"/>
+    <circle cx="750" cy="100" r="1"   fill="#aef"/>
+  </g>
+
+  <!-- TOP HUD -->
+  <rect x="10" y="10" width="880" height="30" fill="#0A130E" rx="3"/>
+  <text x="24"  y="30" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#3CE89A">SPACE DEFENDER</text>
+  <text x="320" y="30" font-family="'Courier New',monospace" font-size="11" fill="#555">SCORE:</text>
+  <text x="370" y="30" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#3CE89A">08450</text>
+  <text x="500" y="30" font-family="'Courier New',monospace" font-size="11" fill="#555">HI-SCORE:</text>
+  <text x="572" y="30" font-family="'Courier New',monospace" font-size="13" font-weight="bold" fill="#FFD700">99999</text>
+  <text x="720" y="30" font-family="'Courier New',monospace" font-size="11" fill="#555">LIVES:</text>
+  <g class="life" transform="translate(768,17)"><use href="#ship" transform="scale(.55)"/></g>
+  <g class="life" transform="translate(790,17)" style="animation-delay:-.3s"><use href="#ship" transform="scale(.55)"/></g>
+  <g class="life" transform="translate(812,17)" style="animation-delay:-.6s"><use href="#ship" transform="scale(.55)"/></g>
+
+  <!-- UFO -->
+  <g class="ufo" transform="translate(0,48)"><use href="#ufo"/></g>
+
+  <!-- ── ROW 1  octopus  magenta ── -->
+  <g class="row1" transform="translate(100,68)">
+    <g class="ba">
+      <g transform="translate(0,0)"   color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(46,0)"  color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(92,0)"  color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(138,0)" color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(184,0)" color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(230,0)" color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(276,0)" color="#FF88CC"><use href="#aC"/></g>
+      <g transform="translate(322,0)" color="#FF88CC"><use href="#aC"/></g>
+    </g>
+    <g class="bb" opacity="0">
+      <g transform="translate(0,0)"   color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(46,0)"  color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(92,0)"  color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(138,0)" color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(184,0)" color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(230,0)" color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(276,0)" color="#DD44AA"><use href="#aC"/></g>
+      <g transform="translate(322,0)" color="#DD44AA"><use href="#aC"/></g>
+    </g>
+  </g>
+
+  <!-- ── ROW 2  crab  green ── -->
+  <g class="row2" transform="translate(100,112)">
+    <g class="ba">
+      <g transform="translate(0,0)"   color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(46,0)"  color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(92,0)"  color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(138,0)" color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(184,0)" color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(230,0)" color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(276,0)" color="#3CE89A"><use href="#aB"/></g>
+      <g transform="translate(322,0)" color="#3CE89A"><use href="#aB"/></g>
+    </g>
+    <g class="bb" opacity="0">
+      <g transform="translate(0,0)"   color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(46,0)"  color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(92,0)"  color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(138,0)" color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(184,0)" color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(230,0)" color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(276,0)" color="#22CC77"><use href="#aB"/></g>
+      <g transform="translate(322,0)" color="#22CC77"><use href="#aB"/></g>
+    </g>
+  </g>
+
+  <!-- ── ROW 3  squid  amber ── -->
+  <g class="row3" transform="translate(100,156)">
+    <g class="ba">
+      <g transform="translate(0,0)"   color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(46,0)"  color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(92,0)"  color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(138,0)" color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(184,0)" color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(230,0)" color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(276,0)" color="#FFAA33"><use href="#aA"/></g>
+      <g transform="translate(322,0)" color="#FFAA33"><use href="#aA"/></g>
+    </g>
+    <g class="bb" opacity="0">
+      <g transform="translate(0,0)"   color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(46,0)"  color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(92,0)"  color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(138,0)" color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(184,0)" color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(230,0)" color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(276,0)" color="#CC8811"><use href="#aA"/></g>
+      <g transform="translate(322,0)" color="#CC8811"><use href="#aA"/></g>
+    </g>
+  </g>
+
+  <!-- ── ROW 4  squid  white ── -->
+  <g class="row4" transform="translate(100,200)">
+    <g class="ba">
+      <g transform="translate(0,0)"   color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(46,0)"  color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(92,0)"  color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(138,0)" color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(184,0)" color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(230,0)" color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(276,0)" color="#DDDDDD"><use href="#aA"/></g>
+      <g transform="translate(322,0)" color="#DDDDDD"><use href="#aA"/></g>
+    </g>
+    <g class="bb" opacity="0">
+      <g transform="translate(0,0)"   color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(46,0)"  color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(92,0)"  color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(138,0)" color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(184,0)" color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(230,0)" color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(276,0)" color="#AAAAAA"><use href="#aA"/></g>
+      <g transform="translate(322,0)" color="#AAAAAA"><use href="#aA"/></g>
+    </g>
+  </g>
+
+  <!-- ENEMY BOMBS -->
+  <g class="bomb1" transform="translate(214,156)">
+    <rect x="-2" y="0" width="4" height="12" fill="#FF4455" rx="1"/>
+    <rect x="-4" y="3" width="8"  height="4" fill="#FF8888" opacity=".4"/>
+  </g>
+  <g class="bomb2" transform="translate(406,170)">
+    <rect x="-2" y="0" width="4" height="12" fill="#FF4455" rx="1"/>
+    <rect x="-4" y="3" width="8"  height="4" fill="#FF8888" opacity=".4"/>
+  </g>
+
+  <!-- SHIELDS -->
+  <g class="shield-pulse" transform="translate(92,308)">
+    <rect width="54" height="20" rx="3" fill="none" stroke="#3CE89A" stroke-width="1.5"/>
+    <rect x="3" y="3" width="48" height="14" fill="#1a3a2a" opacity=".5"/>
+  </g>
+  <g class="shield-pulse" transform="translate(264,308)" style="animation-delay:-.5s">
+    <rect width="54" height="20" rx="3" fill="none" stroke="#3CE89A" stroke-width="1.5"/>
+    <rect x="3" y="3" width="48" height="14" fill="#1a3a2a" opacity=".5"/>
+  </g>
+  <g class="shield-pulse" transform="translate(436,308)" style="animation-delay:-1s">
+    <rect width="54" height="20" rx="3" fill="none" stroke="#3CE89A" stroke-width="1.5"/>
+    <rect x="3" y="3" width="48" height="14" fill="#1a3a2a" opacity=".5"/>
+  </g>
+  <g class="shield-pulse" transform="translate(608,308)" style="animation-delay:-.25s">
+    <rect width="54" height="20" rx="3" fill="none" stroke="#3CE89A" stroke-width="1.5"/>
+    <rect x="3" y="3" width="30" height="14" fill="#1a3a2a" opacity=".5"/>
+    <!-- damaged section -->
+    <rect x="33" y="3" width="18" height="7" fill="#1a3a2a" opacity=".2"/>
+  </g>
+
+  <!-- PLAYER -->
+  <g class="player" transform="translate(80,348)">
+    <use href="#ship"/>
+    <rect x="6"  y="14" width="2" height="6" fill="#3CE89A" opacity=".7" rx="1"/>
+    <rect x="10" y="14" width="2" height="6" fill="#3CE89A" opacity=".7" rx="1"/>
+  </g>
+
+  <!-- LASERS -->
+  <g class="laser1" transform="translate(167,348)">
+    <rect x="-1.5" y="-16" width="3" height="16" fill="#3CE89A" rx="1"/>
+    <rect x="-3"   y="-16" width="6" height="5"  fill="#AAFFDD" opacity=".5" rx="1"/>
+  </g>
+  <g class="laser2" transform="translate(255,348)">
+    <rect x="-1.5" y="-16" width="3" height="16" fill="#3CE89A" rx="1"/>
+    <rect x="-3"   y="-16" width="6" height="5"  fill="#AAFFDD" opacity=".5" rx="1"/>
+  </g>
+  <g class="laser3" transform="translate(328,348)">
+    <rect x="-1.5" y="-16" width="3" height="16" fill="#3CE89A" rx="1"/>
+    <rect x="-3"   y="-16" width="6" height="5"  fill="#AAFFDD" opacity=".5" rx="1"/>
+  </g>
+
+  <!-- EXPLOSIONS -->
+  <g class="exp1" transform="translate(167,140)">
+    <text font-size="20" text-anchor="middle" dominant-baseline="middle" fill="#FFD700">✸</text>
+  </g>
+  <g class="exp2" transform="translate(255,112)">
+    <text font-size="20" text-anchor="middle" dominant-baseline="middle" fill="#FFD700">✸</text>
+  </g>
+  <g class="exp3" transform="translate(328,156)">
+    <text font-size="20" text-anchor="middle" dominant-baseline="middle" fill="#FFD700">✸</text>
+  </g>
+
+  <!-- GROUND LINE -->
+  <rect x="10" y="374" width="880" height="1.5" fill="#3CE89A" opacity=".4"/>
+
+  <!-- SIDE PANEL -->
+  <rect x="720" y="58" width="162" height="306" fill="#0A130E" rx="4"/>
+  <rect x="720" y="58" width="162" height="306" fill="none" stroke="#3CE89A" stroke-width=".8" rx="4" opacity=".4"/>
+
+  <text x="801" y="78" font-family="'Courier New',monospace" font-size="10" fill="#3CE89A" text-anchor="middle" font-weight="bold">── LEGEND ──</text>
+
+  <rect x="732" y="86" width="30" height="10" rx="3" fill="#FF4455"/>
+  <text x="770" y="98" font-family="'Courier New',monospace" font-size="8" fill="#FF8888">= 300 PTS</text>
+
+  <g transform="translate(730,104)" color="#FF88CC"><use href="#aC" transform="scale(.75)"/></g>
+  <text x="770" y="118" font-family="'Courier New',monospace" font-size="8" fill="#FF88CC">= 030 PTS</text>
+
+  <g transform="translate(730,124)" color="#3CE89A"><use href="#aB" transform="scale(.75)"/></g>
+  <text x="770" y="138" font-family="'Courier New',monospace" font-size="8" fill="#3CE89A">= 020 PTS</text>
+
+  <g transform="translate(730,144)" color="#FFAA33"><use href="#aA" transform="scale(.75)"/></g>
+  <text x="770" y="158" font-family="'Courier New',monospace" font-size="8" fill="#FFAA33">= 010 PTS</text>
+
+  <line x1="730" y1="170" x2="873" y2="170" stroke="#3CE89A" stroke-width=".5" opacity=".3"/>
+
+  <text x="801" y="185" font-family="'Courier New',monospace" font-size="9" fill="#888" text-anchor="middle">── WAVE 04 ──</text>
+  <text x="801" y="200" font-family="'Courier New',monospace" font-size="9" fill="#888" text-anchor="middle">DIFFICULTY: MAX</text>
+
+  <text x="734" y="222" font-family="'Courier New',monospace" font-size="8" fill="#888">ACCURACY</text>
+  <rect x="734" y="227" width="110" height="5" rx="2" fill="#1a2a1a"/>
+  <rect x="734" y="227" width="90"  height="5" rx="2" fill="#3CE89A" class="barpulse"/>
+
+  <text x="734" y="244" font-family="'Courier New',monospace" font-size="8" fill="#888">SPEED</text>
+  <rect x="734" y="249" width="110" height="5" rx="2" fill="#1a2a1a"/>
+  <rect x="734" y="249" width="68"  height="5" rx="2" fill="#FFAA33" class="barpulse" style="animation-delay:-.4s"/>
+
+  <text x="734" y="266" font-family="'Courier New',monospace" font-size="8" fill="#888">SHIELDS</text>
+  <rect x="734" y="271" width="110" height="5" rx="2" fill="#1a2a1a"/>
+  <rect x="734" y="271" width="42"  height="5" rx="2" fill="#FF4455" class="barpulse" style="animation-delay:-.8s"/>
+
+  <line x1="730" y1="285" x2="873" y2="285" stroke="#3CE89A" stroke-width=".5" opacity=".3"/>
+
+  <text x="801" y="302" font-family="'Courier New',monospace" font-size="9" fill="#3CE89A" text-anchor="middle">← → MOVE</text>
+  <text x="801" y="316" font-family="'Courier New',monospace" font-size="9" fill="#3CE89A" text-anchor="middle">SPACE FIRE</text>
+
+  <line x1="730" y1="325" x2="873" y2="325" stroke="#3CE89A" stroke-width=".5" opacity=".3"/>
+
+  <text x="801" y="342" font-family="'Courier New',monospace" font-size="9" fill="#3CE89A" text-anchor="middle" class="insertcoin">INSERT COIN</text>
+  <text x="801" y="356" font-family="'Courier New',monospace" font-size="8" fill="#555" text-anchor="middle">▶ PRESS ENTER</text>
+
+  <!-- BOTTOM BAR -->
+  <rect x="10" y="382" width="880" height="28" fill="#0A130E" rx="3"/>
+  <text x="22" y="400"  font-family="'Courier New',monospace" font-size="9" fill="#3CE89A">⬅ ➡ MOVE  SPACE: FIRE</text>
+  <text x="350" y="400" font-family="'Courier New',monospace" font-size="9" fill="#555">© FATIMA ZAHRA MOUMENE — AI ENGINEER</text>
+  <text x="750" y="400" font-family="'Courier New',monospace" font-size="9" fill="#3CE89A">ZAHRA-MMN</text>
+
+  <!-- SCANLINE -->
+  <rect class="scanline" x="10" y="0" width="880" height="40" fill="white"/>
+</svg>
