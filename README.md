@@ -315,7 +315,7 @@ class FatimaZahraMoumene:
 
 <div align="center">
 
-<img src="neural_defender.svg" width="100%" alt="Neural Defender — a self-playing, AI-themed defense game HUD"/>
+<img src="https://cdn.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/neural_defender.svg" width="100%" alt="Neural Defender — a self-playing, AI-themed defense game HUD"/>
 
 > *Plays itself on a loop — no click, no hosting, no JS. Threats are noise injection,*
 > *overfitting, bias drift & adversarial attacks · live accuracy readout · themed around the ML workflow*
@@ -323,11 +323,34 @@ class FatimaZahraMoumene:
 </div>
 
 <!--
-  This is a self-playing SVG: it animates on its own using native SVG/SMIL
-  (<animate>, <animateTransform>, <animateMotion>) instead of JavaScript.
-  GitHub strips <script> tags from any SVG shown in a README, so JS can
-  never run there — SMIL is plain markup, not a script, so it renders fine.
-  (Same trick behind animated "typing" SVGs and the contribution snake.)
+  WHY THIS SVG IS LOADED FROM cdn.jsdelivr.net INSTEAD OF A LOCAL PATH:
+
+  neural_defender.svg animates using SMIL (<animate>, <animateTransform>,
+  <animateMotion>) — plain markup, not JavaScript. But GitHub's own README
+  renderer sanitizes locally-embedded SVGs and strips those animation tags
+  (the same policy that blocks <script>), so a relative path like
+  src="neural_defender.svg" only ever shows a static first frame in the
+  README — even though the file itself is fully animated (that's why it
+  plays correctly if you open the raw file directly).
+
+  Pointing at a jsDelivr mirror of the same file sidesteps GitHub's
+  sanitizer entirely: the browser fetches the SVG straight from jsDelivr's
+  CDN, untouched, so the animation plays. This is the same reason the
+  Typing SVG and streak-stats images elsewhere in this README are loaded
+  from external URLs rather than local files.
+
+  SETUP (one-time):
+    1. Push neural_defender.svg to this repo on your default branch.
+       jsDelivr mirrors public GitHub repos automatically — no extra
+       account or service needed.
+    2. If your default branch isn't "main", change @main in the URL above
+       to match (e.g. @master).
+
+  UPDATING THE FILE LATER:
+    jsDelivr caches aggressively (up to ~7 days) for performance. After
+    pushing a change to neural_defender.svg, force an immediate refresh by
+    visiting this purge URL once in your browser:
+      https://purge.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/neural_defender.svg
 
   To tweak the animation (speed, which enemies pop, colors, layout), edit
   generate_neural_defender.py and re-run: python3 generate_neural_defender.py
