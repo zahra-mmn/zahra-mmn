@@ -315,13 +315,24 @@ class FatimaZahraMoumene:
 
 <div align="center">
 
-<img src="neural_defender.svg" width="100%" alt="Neural Defender — an AI-themed defense game HUD"/>
+<img src="neural_defender.svg" width="100%" alt="Neural Defender — a self-playing, AI-themed defense game HUD"/>
 
-> *Threats are noise injection, overfitting, bias drift & adversarial attacks · defend the model core*
-> *live accuracy / F1 / robustness HUD · epoch counter · themed entirely around the ML workflow*
-> Upload `neural_defender.svg` alongside this README in your profile repo.
+> *Plays itself on a loop — no click, no hosting, no JS. Threats are noise injection,*
+> *overfitting, bias drift & adversarial attacks · live accuracy readout · themed around the ML workflow*
 
 </div>
+
+<!--
+  This is a self-playing SVG: it animates on its own using native SVG/SMIL
+  (<animate>, <animateTransform>, <animateMotion>) instead of JavaScript.
+  GitHub strips <script> tags from any SVG shown in a README, so JS can
+  never run there — SMIL is plain markup, not a script, so it renders fine.
+  (Same trick behind animated "typing" SVGs and the contribution snake.)
+
+  To tweak the animation (speed, which enemies pop, colors, layout), edit
+  generate_neural_defender.py and re-run: python3 generate_neural_defender.py
+  Files: generate_neural_defender.py · neural_defender.svg
+-->
 
 ---
 
