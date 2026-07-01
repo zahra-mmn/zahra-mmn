@@ -28,7 +28,7 @@ MUTED = "#7D8590"
 VIOLET = "#8B8FF7"
 
 W, H = 1120, 300
-CENTER_Y = 142
+CENTER_Y = 128
 LINE_HEIGHT = 30
 FONT_SIZE = 21
 
@@ -67,13 +67,13 @@ def progress_dots(total, dur, per_quote, fade):
     out = []
     for i in range(total):
         x = start_x + i * spacing
-        out.append(f'<circle cx="{x:.1f}" cy="252" r="3" fill="{DOT_OFF}"/>')
+        out.append(f'<circle cx="{x:.1f}" cy="246" r="3" fill="{DOT_OFF}"/>')
         begin = i * per_quote
         f1 = fade / dur
         f2 = (per_quote - fade) / dur
         f3 = per_quote / dur
         out.append(f'''
-    <circle cx="{x:.1f}" cy="252" r="3.6" fill="{MINT}" opacity="0">
+    <circle cx="{x:.1f}" cy="246" r="3.6" fill="{MINT}" opacity="0">
       <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;{f1:.4f};{f2:.4f};{f3:.4f};1"
         dur="{dur}s" begin="{begin}s" repeatCount="indefinite"/>
     </circle>''')
@@ -113,10 +113,7 @@ def build():
   <rect x="10.5" y="10.5" width="{W-21}" height="{H-21}" rx="15.5" fill="none" stroke="url(#ph-edge)" stroke-width="1.3"/>
 
   <!-- decorative mark -->
-  <text x="66" y="98" font-family="Georgia, serif" font-size="86" fill="{MINT_DIM}" opacity="0.55">&#8220;</text>
-
-  <!-- eyebrow -->
-  <text x="{W/2}" y="46" fill="{MUTED}" font-size="11" text-anchor="middle" letter-spacing="3">— MY AI PHILOSOPHY —</text>
+  <text x="66" y="90" font-family="Georgia, serif" font-size="86" fill="{MINT_DIM}" opacity="0.55">&#8220;</text>
 
   <!-- rotating quotes -->
   <g>
@@ -129,9 +126,8 @@ def build():
   </g>
 
   <!-- divider + attribution -->
-  <line x1="{W/2-26}" y1="204" x2="{W/2+26}" y2="204" stroke="{MINT}" stroke-width="1.5" opacity="0.7"/>
-  <text x="{W/2}" y="228" fill="{TEXT}" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="0.5">— {cfg['name']}</text>
-  <text x="{W/2}" y="245" fill="{MUTED}" font-size="10.5" text-anchor="middle" letter-spacing="1">{cfg['role'].upper()}</text>
+  <line x1="{W/2-26}" y1="196" x2="{W/2+26}" y2="196" stroke="{MINT}" stroke-width="1.5" opacity="0.7"/>
+  <text x="{W/2}" y="221" fill="{TEXT}" font-size="13" font-weight="700" text-anchor="middle" letter-spacing="0.5">— {cfg['name']}</text>
 </svg>
 '''
     OUT_PATH.write_text(svg)
