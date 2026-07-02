@@ -124,7 +124,6 @@ class FatimaZahraMoumene:
 <!-- ═══════════════════════════  WHAT I BUILD  ═══════════════════════════ -->
 
 
-
 <!-- ═══════════════════════════  GITHUB STATS  ═══════════════════════════ -->
 
 ## 📊 &nbsp;GitHub Stats
@@ -154,11 +153,11 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  AI PHILOSOPHY  ═══════════════════════════ -->
 
-## 💡 &nbsp;My AI Philosophy
+
 
 <div align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/philosophy_quotes.svg" width="100%" alt="Rotating quote card — my AI philosophy"/>
+<img src="https://cdn.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/philosophy_quotes.svg?v=2" width="100%" alt="Rotating quote card — my AI philosophy"/>
 
 </div>
 
@@ -176,9 +175,10 @@ class FatimaZahraMoumene:
     1. Open quotes_config.json and edit/add/reorder entries.
     2. Run   python3 generate_philosophy_card.py
     3. Commit the refreshed philosophy_quotes.svg + the edited config.
-    4. Visit this once to force the CDN to pick up the change immediately
-       (otherwise it can take up to ~7 days to refresh on its own):
-       https://purge.jsdelivr.net/gh/zahra-mmn/zahra-mmn@main/philosophy_quotes.svg
+    4. Bump the ?v=2 at the end of the image URL above to ?v=3 (then ?v=4,
+       etc. next time). This is more reliable than the purge link — jsDelivr
+       treats a new ?v= as a brand new URL, so there's no stale cache to
+       fight with, on jsDelivr's side or in visitors' browsers.
 
   Files: quotes_config.json · generate_philosophy_card.py · philosophy_quotes.svg
 -->
@@ -187,6 +187,7 @@ class FatimaZahraMoumene:
 ---
 
 <!-- ═══════════════════════════  CURRENT FOCUS  ═══════════════════════════ -->
+
 
 
 <!-- ═══════════════════════════  ACTIVITY  ═══════════════════════════ -->
@@ -203,6 +204,10 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  PROFILE TROPHY  ═══════════════════════════ -->
 
+
+
+
+---
 
 <!-- ═══════════════════════════  CONNECT  ═══════════════════════════ -->
 
@@ -222,6 +227,8 @@ class FatimaZahraMoumene:
 
 <!-- ═══════════════════════════  GAME  ═══════════════════════════ -->
 
+
+<br/>
 
 <!-- capsule-render footer wave -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,50:1a3a2a,100:3CE89A&height=100&section=footer&reversal=false" width="100%"/>
